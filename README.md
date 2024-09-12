@@ -16,7 +16,7 @@
 </div>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/5cbd20a6-d4f3-47ae-ac3e-3355227d8116" width="800"/>
+  <img src="https://github.com/user-attachments/assets/9bbc3acc-86f2-4e9e-9dbd-d5399264440e" width="800"/>
 </div>
 
 ## 📈 Problem Statement
