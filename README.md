@@ -33,6 +33,13 @@ This project focuses on optimizing Domino's inventory management by building a p
   
 ---
 
+## 🔍 Dataset Overview
+
+- The pizza Ingredients dataset contains information about various pizza types and their respective ingredient quantities.
+- The Pizza Sales dataset records pizza sales information, including order details and pricing. 
+
+---
+
 ## 💡 Business Use Cases
 
 -  **Inventory Management**: Ensuring optimal stock levels to meet future demand without overstocking.
@@ -44,19 +51,19 @@ This project focuses on optimizing Domino's inventory management by building a p
 
 ## 🛠️ Approach
 
-### I. 🔍 Data Preprocessing and Exploration
+### I.  Data Preprocessing and Exploration
 
 - **Data Cleaning**: Remove any missing or inconsistent data entries, handle outliers, and format the data appropriately.
 - **Exploratory Data Analysis (EDA)**: Analyze sales trends, seasonality, and patterns in the historical sales data. Visualize the data to identify significant features.
 
-### II. 🔮 Sales Prediction
+### II.  Sales Prediction
 
 - **Feature Engineering**: Create relevant features from the sales data, such as day of the week, month, promotional periods, and holiday effects.
 - **Model Selection**: Choose an appropriate time series forecasting model (e.g., ARIMA, SARIMA, Prophet, LSTM, Regression Model).
 - **Model Training**: Train the predictive model on the historical sales data.
 - **Model Evaluation**: Use metric Mean Absolute Percentage Error (MAPE) to evaluate model performance.
 
-### III. 📦 Purchase Order Generation
+### III.  Purchase Order Generation
 
 - **Sales Forecasting**: Predict pizza sales for the next week using the trained model.
 - **Ingredient Calculation**: Calculate the required quantities of each ingredient based on the predicted sales and the ingredient dataset.
