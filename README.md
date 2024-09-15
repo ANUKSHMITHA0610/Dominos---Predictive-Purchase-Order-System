@@ -182,7 +182,8 @@ In this stage, the process begins with sales forecasting, where the trained mode
 
 <div align="center">
 
-<img width="850" alt="image" src="https://github.com/user-attachments/assets/27022e7d-2c36-41e9-bdf9-24b2a94e4023">
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/46354248-bc8b-4a0d-8a40-45b03b5f0dbb">
+
 
 </div>
 
