@@ -84,7 +84,7 @@ You can download the dataset from the following link:
 
 **Exploratory Data Analysis (EDA)** discovers patterns, relationships, and anomalies in the data.
 
-### Distribution of Pizza Names:
+### i) Distribution of Pizza Names:
 - It shows the distribution of the top 15 pizza names in the dataset. This visualization helps identify the most or least ordered pizzas. 
 - Here y-axis represents different pizza names, and the bars represent the count of orders per pizza.
 
@@ -94,7 +94,7 @@ You can download the dataset from the following link:
 
 </div>
 
-### Distribution of Pizza Categories:
+### ii) Distribution of Pizza Categories:
 - It shows how pizza orders are distributed across different categories (e.g., vegetarian, meat-lovers, etc.). This gives insight into customer preferences by category.
 - Here y-axis represents pizza categories, and the bars represent the number of orders for each category.
    
@@ -104,7 +104,7 @@ You can download the dataset from the following link:
 
 </div>
 
-### Sales Trends Over Time:
+### iii) Sales Trends Over Time:
 - The `order_date` column is converted into a datetime format and then groups the sales by date to generate a time series plot.
 - Here the line plot displays daily pizza sales (quantity sold) over time, which helps in spotting trends, seasonality, or spikes in sales.
 
@@ -114,7 +114,7 @@ You can download the dataset from the following link:
 
 </div>
 
-### Top 15 Ingredients by Total Quantity Used (in grams):
+### iv) Top 15 Ingredients by Total Quantity Used:
 - Here the bar plot shows the top 15 pizza ingredients used, based on the total quantity in grams. This helps to determine the most commonly used ingredients.
 - The x-axis represents the total quantity used in grams, while the y-axis lists the ingredients.
 
@@ -124,7 +124,7 @@ You can download the dataset from the following link:
 
 </div>
 
-### Top 15 Pizzas by Total Quantity of Ingredients Used:
+### v) Top 15 Pizzas by Total Quantity of Ingredients Used:
 - Another bar plot displays the top 15 pizzas based on the total amount of ingredients (in grams) used. This gives insights into which pizzas require more ingredients, possibly hinting at their complexity or popularity.
 - Here x-axis represents the total quantity of ingredients in grams, and the y-axis shows the pizza names.
 
@@ -138,7 +138,7 @@ You can download the dataset from the following link:
 
 Sales Prediction involves **Time Series Forecasting** , a technique used to predict future values based on historical data collected over time. The process includes the following steps:
 
-#### 1. Feature Engineering
+#### i) Feature Engineering
 
 Created new variables from the raw sales data to improve the model’s performance like:
 
@@ -146,14 +146,14 @@ Created new variables from the raw sales data to improve the model’s performan
 - **Month**: Extracted the month from the sales date to account for monthly trends and seasonal patterns.
 - **Holiday Effects**: Identified and included features for holidays or special events that can impact sales patterns.
 
-#### 2. Model Selection
+#### ii) Model Selection
 
 Model Selection involves choosing the most suitable forecasting model for our sales data:
 
 - [__ARIMA (AutoRegressive Integrated Moving Average)__](https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html): Captures trends and autocorrelations in non-seasonal data.
 - [__SARIMA (Seasonal ARIMA)__](https://www.statsmodels.org/dev/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html): Extends ARIMA to handle seasonality.
 
-#### 3. Model Training
+#### iii) Model Training
 
 Model Training involves fitting the chosen model to historical sales data:
 
@@ -161,7 +161,7 @@ Model Training involves fitting the chosen model to historical sales data:
 - Trained the model on the training set by adjusting parameters to minimize prediction errors.
 - Optimized model performance by tuning hyperparameters using techniques like cross-validation or grid search.
 
-#### 4. Model Evaluation
+#### iv) Model Evaluation
 
 Model Evaluation assesses the accuracy and performance of the trained model using:
 
@@ -179,6 +179,12 @@ Model Evaluation assesses the accuracy and performance of the trained model usin
 ### IV. Purchase Order Generation
 
 In this stage, the process begins with sales forecasting, where the trained model is used to predict pizza sales for the upcoming week. Following this, the ingredient calculation phase involves determining the required quantities of each ingredient based on the predicted sales and the existing ingredient dataset. Finally, a purchase order creation step is undertaken to generate a comprehensive purchase order that details the quantities of each ingredient needed for the forecasted sales period. This ensures that inventory levels are appropriately adjusted to meet the anticipated demand.
+
+<div align="center">
+
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/27022e7d-2c36-41e9-bdf9-24b2a94e4023">
+
+</div>
 
 ---
 
@@ -198,10 +204,12 @@ This comparison allows us to evaluate how closely each model's predictions match
 
 | __Forecasting Methods__ | __Mean Absolute Percentage Error (MAPE)__ | 
 | :-: | :-: | 
-| [__1. ARIMA__](https://statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html) | 0.20 | 
-| [__2. SARIMA__](https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html) | |
+| [__1. ARIMA__](https://statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html) | 0.19 | 
+| [__2. SARIMA__](https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html) | 0.20 |
 
 </div>
+
+The comparison of forecasting methods based on the Mean Absolute Percentage Error (MAPE) shows that the ARIMA model slightly outperforms SARIMA, with a lower MAPE value of 0.19 compared to 0.20 for SARIMA. This indicates that **ARIMA** provides marginally more accurate predictions in this context.
 
 ---
 
