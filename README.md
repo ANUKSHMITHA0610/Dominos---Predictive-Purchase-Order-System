@@ -103,11 +103,11 @@ Created new variables from the raw sales data to improve the model’s performan
 
 Model Selection involves choosing the most suitable forecasting model for your sales data:
 
-- **ARIMA (AutoRegressive Integrated Moving Average)**: Captures trends and autocorrelations in non-seasonal data.
-- **SARIMA (Seasonal ARIMA)**: Extends ARIMA to handle seasonality.
-- **Prophet**: Designed for handling missing data, outliers, and multiple seasonalities.
-- **LSTM (Long Short-Term Memory)**: A type of recurrent neural network for capturing long-term dependencies in complex data.
-- **Regression Model**: Useful when data has significant explanatory variables affecting sales.
+- [__ARIMA (AutoRegressive Integrated Moving Average)__](https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html): Captures trends and autocorrelations in non-seasonal data.
+- [__SARIMA (Seasonal ARIMA)__](https://www.statsmodels.org/dev/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html): Extends ARIMA to handle seasonality.
+- [__Prophet__]: Designed for handling missing data, outliers, and multiple seasonalities.
+- [__LSTM (Long Short-Term Memory)__]: A type of recurrent neural network for capturing long-term dependencies in complex data.
+- [__Regression Model__]: Useful when data has significant explanatory variables affecting sales.
 
 **Model Training**
 
